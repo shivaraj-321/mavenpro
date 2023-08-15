@@ -1,0 +1,10 @@
+
+create sequence post_seq start with 1 increment by 50
+
+create sequence user_details_seq start with 1 increment by 50
+
+create table post 
+(id integer not null, description varchar(255), user_id integer, primary key (id))
+
+create table user_details 
+(id integer not null, birthdate date, name varchar(255), primary key (id))
